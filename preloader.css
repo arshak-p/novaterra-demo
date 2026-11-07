@@ -1,0 +1,34 @@
+/* Novaterra hand-drawn preloader */
+.loader {
+    --ld-forest: #10493A; --ld-leaf: #19C652; --ld-night: #01190E; --ld-cream: #F7F7EF;
+    --ld-font: "DM Sans", "Aeonik", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    position: fixed; inset: 0; z-index: 9999; color: var(--ld-forest); font-family: var(--ld-font);
+    transition: transform 1.15s cubic-bezier(.76,0,.24,1); will-change: transform;
+  }
+  .loader .bg { position: absolute; inset: 0 0 -14vh 0; pointer-events: none; }
+  .loader .bg::before { content: ""; position: absolute; inset: 0 0 14vh 0; background: var(--ld-cream); }
+  .loader .bg svg { position: absolute; left: 0; bottom: 0; width: 100%; height: 14vh; display: block; }
+  .loader.out { transform: translateY(calc(-100% - 16vh)); }            /* lifts away on a curved edge */
+  .loader .stage { position: relative; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center;
+    padding: 24px max(16px, env(safe-area-inset-right, 0px)) 24px max(16px, env(safe-area-inset-left, 0px));
+    transition: opacity .5s ease, transform .9s cubic-bezier(.76,0,.24,1); }
+  .loader.out .stage { opacity: 0; transform: translateY(-6vh); }
+  .loader svg.sketch { width: min(280px, 60vw); height: auto; overflow: visible; display: block; }
+  .loader .ink { fill: none; stroke: var(--ld-forest); stroke-linecap: round; stroke-linejoin: round; }
+  .loader .leaf { fill: var(--ld-leaf); stroke: var(--ld-forest); stroke-width: 2; transform-box: fill-box; transform: scale(0) rotate(-20deg); transition: transform .9s cubic-bezier(.34,1.56,.64,1); }
+  .loader .leaf.l { transform-origin: 100% 100%; }
+  .loader .leaf.r { transform-origin: 0% 100%; }
+  .loader .leaf.on { transform: scale(1) rotate(0deg); }
+  .loader .count { font: 700 clamp(56px, 11vw, 112px)/.9 var(--ld-font); letter-spacing: -.05em; color: var(--ld-night); font-variant-numeric: tabular-nums; display: flex; align-items: flex-start; gap: 4px; margin-top: 8px; }
+  .loader .count small { font-size: .3em; letter-spacing: 0; margin-top: .3em; color: var(--ld-leaf); }
+  .loader .note { font: 600 clamp(22px, 3.2vw, 30px)/1.2 "Caveat", "Segoe Print", "Bradley Hand", cursive; color: var(--ld-forest); min-height: 1.3em; transform: rotate(-2deg); transition: opacity .3s ease, transform .3s ease; }
+  .loader .note.fade { opacity: 0; transform: rotate(-2deg) translateY(6px); }
+  .loader .brand-ld { position: absolute; top: calc(24px + env(safe-area-inset-top, 0px)); left: max(24px, env(safe-area-inset-left, 0px)); display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 500; color: var(--ld-night); }
+  .loader .brand-ld i { width: 30px; height: 30px; border-radius: 50%; background: var(--ld-forest); color: var(--ld-leaf); display: grid; place-items: center; font-style: normal; font-weight: 700; font-size: 13px; }
+  .loader .sig { position: absolute; left: 0; right: 0; bottom: calc(26px + env(safe-area-inset-bottom, 0px)); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: rgba(1,25,14,.5); text-align: center; }
+  body.ld-locked { overflow: hidden; }                                   /* stops scrolling while loading */
+  @media (prefers-reduced-motion: reduce) {
+    .loader { transition: opacity .4s ease; } .loader.out { transform: none; opacity: 0; } .loader .leaf { transition: none; }
+  }
+
+html:has(body.ld-locked){overflow:hidden}

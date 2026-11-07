@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#01190E">
+<title>Novaterra — Sustainability, Energy, Technology &amp; Operational Excellence</title>
+  <meta name="description" content="Integrated consulting across sustainability, energy, technology and operational excellence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter+Tight:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap">
+<link rel="stylesheet" href="preloader.css?v=2">
+<link rel="stylesheet" href="ui.css">
+</head>
+<body>
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading Novaterra">
+  <div class="bg"><svg viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path fill="#F7F7EF" d="M0 0 H1440 V40 C1100 40 900 140 520 140 C260 140 120 90 0 70 Z"/><path fill="none" stroke="#19C652" stroke-opacity=".6" stroke-width="2" vector-effect="non-scaling-stroke" d="M1440 40 C1100 40 900 140 520 140 C260 140 120 90 0 70"/></svg></div>
+  <div class="brand-ld"><img class="logo-img" src="assets/logo.png" alt="">Novaterra</div>
+  <div class="stage">
+    <svg class="sketch" viewBox="0 0 300 300" aria-hidden="true">
+      <path class="ink" id="ldStem" stroke-width="3" d=""/>
+      <path class="leaf l" id="ldLeafL" d=""/>
+      <path class="leaf r" id="ldLeafR" d=""/>
+      <path class="ink" id="ldRing" stroke-width="3.2" d=""/>
+      <path class="ink" id="ldRing2" stroke-width="1.4" opacity=".5" d=""/>
+      <path class="ink" id="ldMer1" stroke-width="2" opacity=".75" d=""/>
+      <path class="ink" id="ldLat" stroke-width="2" opacity=".75" d=""/>
+      <path class="ink" id="ldMer2" stroke-width="2" opacity=".75" d=""/>
+      <path class="ink" id="ldLand" stroke-width="2.2" d=""/>
+    </svg>
+    <div class="count"><span id="ldNum">0</span><small>%</small></div>
+    <div class="note" id="ldNote">sharpening the pencil&hellip;</div>
+  </div>
+  <div class="sig">Sustainable transformation, drawn by people</div>
+</div>
+
+
+<div class="mnav" id="mnav" aria-hidden="true" role="dialog" aria-label="Menu">
+  <div class="mnav-in">
+    <ul class="mnav-links">
+      <li style="--i:0"><a href="#home" data-nav="home"><em>01</em><span>Home</span></a></li>
+      <li style="--i:1"><a href="#sustain" data-nav="services"><em>02</em><span>Services</span></a></li>
+      <li style="--i:2"><a href="#vision" data-nav="vision"><em>03</em><span>Vision 2030</span></a></li>
+      <li style="--i:3"><a href="#contact" data-nav="contact"><em>04</em><span>Contact</span></a></li>
+    </ul>
+    <div class="mnav-foot">
+      <a class="btn btn-green" href="#contact">Get in touch <i class="arr"></i></a>
+      <p>email@novaterra.example<br>+966 00 000 0000</p>
+    </div>
+  </div>
+</div>
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#home"><img class="logo-img" src="assets/logo.png" alt=""><span>Novaterra</span></a>
+    <ul class="links" id="links">
+      <li><a href="#home" data-nav="home">Home</a></li>
+      <li><a href="#sustain" data-nav="services">Services</a></li>
+      <li><a href="#vision" data-nav="vision">Vision 2030</a></li>
+      <li><a href="#contact" data-nav="contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-green nav-cta" href="#contact">Get in touch <i class="arr"></i></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="path" aria-hidden="true">
+  <svg id="pathSvg" preserveAspectRatio="none">
+    <defs><clipPath id="darkRegions"><path id="clipShape"/></clipPath><clipPath id="noHero"><rect id="noHeroRect" x="0" y="0" width="100000" height="100000"/></clipPath></defs>
+    <g clip-path="url(#noHero)">
+    <path id="pathDark" class="dots dark"/>
+    <g id="ringsDark" class="rings dark"></g>
+    <g clip-path="url(#darkRegions)">
+      <path id="pathLight" class="dots light"/>
+      <g id="ringsLight" class="rings light"></g>
+    </g>
+    </g>
+  </svg>
+</div>
+<div id="shadow" aria-hidden="true"></div>
+<div id="globe" aria-hidden="true"><img class="flat" src="assets/globe.png" alt=""><canvas id="gl"></canvas></div>
+<div class="scroll-hint" id="scrollHint" aria-hidden="true">Scroll <span>↓</span></div>
+
+<main>
+  <!-- HOME -->
+  <section class="sec s-home" id="home" data-nav="home">
+    <i class="anchor anchor-hero" data-at="0" data-globe="720,0,1550,0" aria-hidden="true"></i>
+    <i class="anchor anchor-hero2" data-at="0" data-globe="720,0,540,0" aria-hidden="true"></i>
+    <h1 class="giant home-word">NOVATERRA</h1>
+    <div class="copy left">
+      <p class="eyebrow"><i></i>Novaterra Consultancy</p>
+      <h2 class="title">Driving sustainable &amp; intelligent transformation.</h2>
+      <p class="lead">Integrated consulting across sustainability, energy, technology and operational excellence.</p>
+      <div class="btns">
+        <a class="btn btn-green" href="#sustain">Explore our services <i class="arr"></i></a>
+        <a class="btn btn-white" href="#contact">Talk to our experts <i class="arr"></i></a>
+      </div>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0,200 C480,200 960,0 1440,0 L1440,200 L0,200 Z"/></svg>
+  </section>
+
+  <!-- 01 SUSTAIN -->
+  <section class="sec s-sustain" id="sustain" data-nav="services">
+    <i class="anchor" data-globe="1060,340,500,-14" style="--ax:1060;--ay:340" aria-hidden="true"></i>
+    <h2 class="giant tilt-l fill">SUSTAIN</h2>
+    <div class="copy left">
+      <p class="eyebrow"><i></i><span>01 · Sustainability &amp; ESG</span></p>
+      <h3 class="title">Making sustainability measurable.</h3>
+      <ul class="list">
+        <li>ESG Strategy &amp; Reporting</li><li>Carbon Footprinting — Scope 1, 2 &amp; 3</li>
+        <li>Net-Zero Roadmaps</li><li>Green Building Certification</li>
+      </ul>
+      <button class="btn btn-green" data-open="sustain">Explore sustainability <i class="arr"></i></button>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 180" preserveAspectRatio="none"><path d="M0,180 C480,180 960,0 1440,0 L1440,180 L0,180 Z"/></svg>
+  </section>
+
+  <!-- 02 ENERGY -->
+  <section class="sec s-energy" id="energy" data-nav="services">
+    <i class="anchor" data-globe="330,460,560,16" style="--ax:330;--ay:460" aria-hidden="true"></i>
+    <h2 class="giant outline center">ENERGY</h2>
+    <div class="copy right">
+      <p class="eyebrow"><i></i><span>02 · Energy &amp; Efficiency</span></p>
+      <h3 class="title">Smarter energy.<br>Lower costs.</h3>
+      <ul class="list">
+        <li>Energy Audits (ASHRAE L1–3)</li><li>ISO 50001 Energy Management</li>
+        <li>Solar &amp; Wind Feasibility</li><li>Measurement &amp; Verification</li>
+      </ul>
+      <button class="btn btn-dark" data-open="energy">Explore energy <i class="arr"></i></button>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 180" preserveAspectRatio="none"><path d="M0,0 C480,0 960,180 1440,180 L1440,180 L0,180 Z"/></svg>
+  </section>
+
+  <!-- 03 DIGITAL -->
+  <section class="sec s-digital" id="digital" data-nav="services">
+    <i class="anchor" data-globe="1090,270,340,-10" style="--ax:1090;--ay:270" aria-hidden="true"></i>
+    <h2 class="giant tilt-l fill">DIGITAL</h2>
+    <div class="copy left">
+      <p class="eyebrow"><i></i><span>03 · Technology &amp; Digital</span></p>
+      <h3 class="title">Data that turns into action.</h3>
+      <ul class="list">
+        <li>IoT Energy Monitoring</li><li>Digital Twins</li>
+        <li>SCADA Modernisation</li><li>AI Predictive Maintenance</li>
+      </ul>
+      <button class="btn btn-green" data-open="digital">Explore technology <i class="arr"></i></button>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 180" preserveAspectRatio="none"><path d="M0,180 C480,180 960,0 1440,0 L1440,180 L0,180 Z"/></svg>
+  </section>
+
+  <!-- 04 EXCEL -->
+  <section class="sec s-excel" id="excel" data-nav="services">
+    <i class="anchor" data-globe="350,280,470,12" style="--ax:350;--ay:280" aria-hidden="true"></i>
+    <h2 class="giant tilt-r solid center">EXCEL</h2>
+    <div class="copy right">
+      <p class="eyebrow"><i></i><span>04 · Operational Excellence</span></p>
+      <h3 class="title">Leaner processes.<br>Clearer results.</h3>
+      <ul class="list">
+        <li>Lean Six Sigma</li><li>KPI Development &amp; Monitoring</li>
+        <li>Change Management</li><li>ISO 9001 Quality Systems</li>
+      </ul>
+      <button class="btn btn-dark" data-open="excel">Explore operations <i class="arr"></i></button>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 180" preserveAspectRatio="none"><path d="M0,0 C480,0 960,180 1440,180 L1440,180 L0,180 Z"/></svg>
+  </section>
+
+  <!-- 05 VISION 2030 -->
+  <section class="sec s-vision" id="vision" data-nav="vision">
+    <i class="anchor" data-globe="720,240,320,0" style="--ax:720;--ay:240" aria-hidden="true"></i>
+    <div class="photo" aria-hidden="true"></div>
+    <h2 class="giant cream center">2030</h2>
+    <div class="copy left">
+      <p class="eyebrow"><i></i><span>05 · Saudi Vision 2030</span></p>
+      <h3 class="title">Advancing the Kingdom's transformation.</h3>
+      <ul class="list">
+        <li>Energy Transition Advisory</li><li>IKTVA Strategy</li>
+        <li>Smart City Consulting</li><li>Saudi Regulatory Alignment</li>
+      </ul>
+      <button class="btn btn-green" data-open="vision">Explore Vision 2030 <i class="arr"></i></button>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 210" preserveAspectRatio="none"><path d="M0,210 C480,210 960,0 1440,0 L1440,210 L0,210 Z"/></svg>
+  </section>
+
+  <!-- TEAM -->
+  <section class="sec s-team" id="team" data-nav="vision">
+    <i class="anchor" data-globe="360,300,440,10" style="--ax:360;--ay:300" aria-hidden="true"></i>
+    <h2 class="giant outline center">TEAM</h2>
+    <div class="copy left">
+      <p class="eyebrow"><i></i><span>06 · Our people</span></p>
+      <h3 class="title">Meet our team.</h3>
+      <p class="lead">The people behind Novaterra. Team details to be confirmed.</p>
+    </div>
+    <div class="team-grid">
+      <article class="member" style="--i:0"><span class="mno">01</span><div class="avatar"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="av0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c6b52"/><stop offset="1" stop-color="#0a3a2a"/></linearGradient></defs>
+            <rect width="120" height="120" fill="url(#av0)"/><circle cx="60" cy="46" r="20" fill="#19C652" opacity=".9"/><path d="M20 120c4-26 20-38 40-38s36 12 40 38z" fill="#19C652" opacity=".9"/></svg></div><h4>Name to be confirmed</h4><p class="role">Role to be confirmed</p><div class="soc" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M6.5 8.5h-3V20h3zM5 3.5a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5zM20.5 20v-6.3c0-3-1.6-4.4-3.8-4.4-1.7 0-2.5.9-3 1.6V8.5h-3V20h3v-6.2c0-1.6.8-2.6 2.1-2.6 1.2 0 1.8.9 1.8 2.5V20z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5zm2.3-.4 6.7 5.2 6.7-5.2z"/></svg></span></div></article>
+      <article class="member" style="--i:1"><span class="mno">02</span><div class="avatar"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="av1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c6b52"/><stop offset="1" stop-color="#0a3a2a"/></linearGradient></defs>
+            <rect width="120" height="120" fill="url(#av1)"/><circle cx="60" cy="46" r="20" fill="#19C652" opacity=".9"/><path d="M20 120c4-26 20-38 40-38s36 12 40 38z" fill="#19C652" opacity=".9"/></svg></div><h4>Name to be confirmed</h4><p class="role">Role to be confirmed</p><div class="soc" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M6.5 8.5h-3V20h3zM5 3.5a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5zM20.5 20v-6.3c0-3-1.6-4.4-3.8-4.4-1.7 0-2.5.9-3 1.6V8.5h-3V20h3v-6.2c0-1.6.8-2.6 2.1-2.6 1.2 0 1.8.9 1.8 2.5V20z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5zm2.3-.4 6.7 5.2 6.7-5.2z"/></svg></span></div></article>
+      <article class="member" style="--i:2"><span class="mno">03</span><div class="avatar"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="av2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c6b52"/><stop offset="1" stop-color="#0a3a2a"/></linearGradient></defs>
+            <rect width="120" height="120" fill="url(#av2)"/><circle cx="60" cy="46" r="20" fill="#19C652" opacity=".9"/><path d="M20 120c4-26 20-38 40-38s36 12 40 38z" fill="#19C652" opacity=".9"/></svg></div><h4>Name to be confirmed</h4><p class="role">Role to be confirmed</p><div class="soc" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M6.5 8.5h-3V20h3zM5 3.5a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5zM20.5 20v-6.3c0-3-1.6-4.4-3.8-4.4-1.7 0-2.5.9-3 1.6V8.5h-3V20h3v-6.2c0-1.6.8-2.6 2.1-2.6 1.2 0 1.8.9 1.8 2.5V20z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5zm2.3-.4 6.7 5.2 6.7-5.2z"/></svg></span></div></article>
+      <article class="member" style="--i:3"><span class="mno">04</span><div class="avatar"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="av3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c6b52"/><stop offset="1" stop-color="#0a3a2a"/></linearGradient></defs>
+            <rect width="120" height="120" fill="url(#av3)"/><circle cx="60" cy="46" r="20" fill="#19C652" opacity=".9"/><path d="M20 120c4-26 20-38 40-38s36 12 40 38z" fill="#19C652" opacity=".9"/></svg></div><h4>Name to be confirmed</h4><p class="role">Role to be confirmed</p><div class="soc" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M6.5 8.5h-3V20h3zM5 3.5a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5zM20.5 20v-6.3c0-3-1.6-4.4-3.8-4.4-1.7 0-2.5.9-3 1.6V8.5h-3V20h3v-6.2c0-1.6.8-2.6 2.1-2.6 1.2 0 1.8.9 1.8 2.5V20z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5zm2.3-.4 6.7 5.2 6.7-5.2z"/></svg></span></div></article>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 210" preserveAspectRatio="none"><path d="M0,210 C480,210 960,0 1440,0 L1440,210 L0,210 Z"/></svg>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec s-contact" id="contact" data-nav="contact">
+    <i class="anchor" data-globe="1060,358,470,-8" style="--ax:1060;--ay:358" aria-hidden="true"></i>
+    <h2 class="giant tilt-l fill">LET'S TALK</h2>
+    <div class="copy left">
+      <p class="eyebrow"><i></i><span>Contact</span></p>
+      <h3 class="title">Let's build what's next.</h3>
+      <p class="lead">Have a sustainability, energy, technology or operational challenge? Speak with our consulting team.</p>
+      <button class="btn btn-green" data-open="contact">Book a consultation <i class="arr"></i></button>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 140" preserveAspectRatio="none"><path d="M0,0 C480,0 960,140 1440,140 L1440,140 L0,140 Z"/></svg>
+  </section>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="foot-grid">
+    <div>
+      <a class="brand light" href="#home"><img class="logo-img" src="assets/logo.png" alt=""><span>Novaterra</span></a>
+      <p class="muted">Integrated consulting across sustainability, energy, technology and operational excellence.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="#sustain">Sustainability &amp; ESG</a><a href="#energy">Energy &amp; Efficiency</a>
+      <a href="#digital">Technology &amp; Digital</a><a href="#excel">Operational Excellence</a>
+      <a href="#vision">Vision 2030</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="#home">About</a><a href="#home">Industries</a><a href="#home">Insights</a>
+      <a href="#home">Case Studies</a><a href="#home">Careers</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:email@novaterra.example">email@novaterra.example</a>
+      <a href="tel:+966000000000">+966 00 000 0000</a>
+      <span>Office address, Riyadh</span>
+      <a href="#">LinkedIn ↗</a>
+    </div>
+  </div>
+  <div class="foot-bar">
+    <span>© 2026 Novaterra Consultancy. All rights reserved.</span>
+    <span class="foot-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#home">Back to top ↑</a></span>
+  </div>
+  <div class="foot-word" aria-hidden="true">NOVATERRA</div>
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="x" data-close aria-label="Close">✕</button>
+    <div id="mBody"></div>
+  </div>
+</div>
+
+<script src="preloader.js"></script>
+<script src="smooth.js"></script>
+<script src="globe.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
